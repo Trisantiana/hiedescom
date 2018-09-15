@@ -3,7 +3,7 @@ html, body {
 	padding: 0;
 	width: 100%;
 	background-color: #dfe6e9;
-	font-family: Calibri; 
+	font-family: Calibri;
 }
 
 .slider-box{
@@ -29,7 +29,7 @@ slider > * {
 	height: 100%;
 	background: #1f1f1f;
 	animation: slide 12s infinite;
-	overflow: hidden; 
+	overflow: hidden;
 }
 
 slide:nth-child(1) {
@@ -39,7 +39,7 @@ slide:nth-child(1) {
 	background-size: cover;
 	background-position: center;
 }
- 
+
 slide:nth-child(2) {
 	animation-delay: 2s;
 	background-image: url(../images/2.jpg);
@@ -116,7 +116,7 @@ header {
 .line {
 	margin: auto;
     position: absolute;
-	width: 30%; 
+	width: 30%;
 	height:4px;
 	left: 0; right: 0;
 	background-color: #6CA338;
@@ -188,7 +188,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	
+
 }
 
 
@@ -305,5 +305,143 @@ nav.black ul li a {
 			color: white;
 			font-size: 50px;
 			border: 6px solid white;
-			padding: 10px 30px;    
+			padding: 10px 30px;
 		}
+
+/*hover image 2*/
+.container {
+    width: 1000px;
+    margin: 65px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box1 {
+    position: relative;
+    width: 280px;
+    height: 280px;
+	background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box1 .imgBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box1 .imgBox img {
+    max-width: 100%;
+    transition: transform 2s;
+
+}
+
+.container .box1:hover .imgBox img {
+    transform: scale(1.2);
+}
+
+.container .box1 .details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.container .box1:hover .details {
+	display: inline-block;
+    transform: scaleY(1);
+}
+
+.container .box1 .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.container .box1 .details .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ff0;
+
+}
+
+.container .box1 .details .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+/*contacts us Sosmed*/
+
+
+
+#sosmed {
+    background: #949494FF;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+#sosmed h2 {
+    font-family: "Web-Raleway-Bold";
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#sosmed h3 {
+    margin-top: 0;
+    font-size: 19px;
+    font-family: "Web-Raleway";
+    font-weight: normal;
+}
+
+#sosmed .left-content {
+    float:left;
+	margin-left: 20px;
+}
+
+#sosmed .lokasi {
+    float: center;
+	margin-left: 43%;
+}
+
+#sosmed .lokasi h2 {
+    float: center;
+    margin-right: 40px;
+
+}
+
+#sosmed .right-content {
+/*    float: left;*/
+    margin-left: 80%;
+    width: 50px;
+    padding: 10px;
+    border: 0;
+    box-shadow: 0;
+    display: inline-block;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#sosmed .right-content h2 {
+    /*float: right;*/
+}
+
+#footer {
+    background: #153244FF;
+    padding: 20px 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+}
+
